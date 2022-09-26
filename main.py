@@ -16,12 +16,14 @@ def fullbackup():
 
 while check:
     user_input = int(input(
-        "Welcome to Mathias' backup script \nPlease select option 1 (full backup) or option 2 (differential backup)\n"))
+        "Welcome to Mathias' backup script \nPlease select option 1, 2 or 3 \n 1. full backup \n 2. differential backup\n 3. exit\n"))
     if user_input == 1:
         fullbackup()
         print("Full backup finished")
         check = False
     elif user_input == 2:
         print("Work in progress.. Differential backup is in development state, please select another backup option")
+    elif user_input == 3:
+        break
     else:
         print("Wrong input, try again..")
